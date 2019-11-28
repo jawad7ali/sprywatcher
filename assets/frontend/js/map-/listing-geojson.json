@@ -1,0 +1,141 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.0384357",
+                    "33.66673"
+                ]
+            },
+            "properties": {
+                "id": "acc60b8b92d6c53d282f5477ced2b005",
+                "index": 0,
+                "isActive": true,
+                "logo": "6baa01572ec7b8a065f967f91929f25d.jpg",
+                "image": "80fee64dfc871c807f0d76ea1326d996.jpg",
+                "link": "http://localhost/spryfinder/4/general/exceptional-images/1",
+                "url": "ww.c.com",
+                "name": "Exceptional Images.",
+                "handicap": "1",
+                "category": "general",
+                "email": "jawad7ali@gmail.com",
+                "stars": "0.0",
+                "stars2": "0.0",
+                "stars3": "0.0",
+                "phone": "03156562323",
+                "address": "",
+                "about": "Exceptional Ima\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "0",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.0459357",
+                    "33.6038165"
+                ]
+            },
+            "properties": {
+                "id": "118d4278377fbc5d38321474e25407e3",
+                "index": 1,
+                "isActive": true,
+                "logo": "96f87e5e9f6bd71dd84f8b8e7e11e5a2.jpg",
+                "image": "93b9f7c5d854baa60438a276afa8cc1e.jpg",
+                "link": "http://localhost/spryfinder/4/general/market-research-interviewing/2",
+                "url": "",
+                "name": "Market Research Interviewing",
+                "handicap": "1",
+                "category": "general",
+                "email": "",
+                "stars": "0.0",
+                "stars2": "0.0",
+                "stars3": "0.0",
+                "phone": "",
+                "address": "",
+                "about": "Market Research\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.0478687",
+                    "33.7076566"
+                ]
+            },
+            "properties": {
+                "id": "368643249380d4ad6e01c15adba67b16",
+                "index": 2,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "2179747a781559ef75f2a2b7eb4f4dac.jpg",
+                "link": "http://localhost/spryfinder/4/metro-cash-and-carry-laila-road-islamabad-pakistan/4",
+                "url": null,
+                "name": "Metro Cash and carry, Laila Road, Islamabad, Pakistan",
+                "handicap": "1",
+                "category": null,
+                "email": "jawadali@gmail.com",
+                "stars": "2.0",
+                "stars2": "3.0",
+                "stars3": "4.0",
+                "phone": null,
+                "address": null,
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.0240644",
+                    "33.6400907"
+                ]
+            },
+            "properties": {
+                "id": "2218a59490cb2567be09122597568fe4",
+                "index": 3,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "05a2c8657c648585dbf2e688d1dd3260.jpg",
+                "link": "http://localhost/spryfinder/4/centaurus-metro-subway-islamabad-pakistan/5",
+                "url": null,
+                "name": "Centaurus Metro Subway, Islamabad, Pakistan",
+                "handicap": "0",
+                "category": null,
+                "email": "jawadali@gmail.com",
+                "stars": "3.0",
+                "stars2": "4.0",
+                "stars3": "5.0",
+                "phone": null,
+                "address": null,
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
