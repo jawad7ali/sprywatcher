@@ -137,7 +137,6 @@
 <?php include 'assets/frontend/js/map/map-category.php'; ?>
 
 <!-- /container -->
-<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0" type="text/javascript"></script> -->
 <script> 
 	
 
