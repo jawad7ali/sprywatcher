@@ -8,7 +8,7 @@
 <script src="<?php echo base_url();?>assets/frontend/js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key="></script>
 <script src="<?php echo base_url();?>assets/frontend/js/markerclusterer.js"></script>
 <script src="<?php echo base_url();?>assets/frontend/js/listing_map.js"></script>
 <script src="<?php echo base_url();?>assets/frontend/js/infobox.js"></script>

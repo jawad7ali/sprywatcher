@@ -389,7 +389,7 @@ $listing_categories = json_decode($listing_details['categories'], false);
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=" type="text/javascript"></script>
 
 <script type="text/javascript">
   $(document).ready(function () {

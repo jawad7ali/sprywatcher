@@ -349,7 +349,11 @@
     </div>
   </div>
        
+<<<<<<< HEAD
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=<?php echo GOOGLE_API ?>" type="text/javascript"></script>
+=======
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=" type="text/javascript"></script>
+>>>>>>> 109015e421422deed9de8bfd7a71aa9dd56b8439
 
   <script type="text/javascript">
 

@@ -152,8 +152,21 @@
 <?php include 'assets/frontend/js/map/map-category.php'; ?>
 
 <!-- /container -->
+<<<<<<< HEAD
  <script> 
  	var base_url = '<?php echo base_url();?>';
+=======
+<script> 
+	
+
+ 
+>>>>>>> 109015e421422deed9de8bfd7a71aa9dd56b8439
 	var jsonfileurl ='<?php echo base_url('assets/frontend/js/map/listing-geojson.json'); ?>';
 	createListingsMap({mapId: 'categorySideMap', jsonFile: jsonfileurl});
+<<<<<<< HEAD
 </script>
+=======
+
+	 
+</script>
+>>>>>>> 109015e421422deed9de8bfd7a71aa9dd56b8439
