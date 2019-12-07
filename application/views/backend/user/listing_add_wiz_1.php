@@ -300,7 +300,7 @@
                  <div class="form-group row mb-3">
                   <label class="col-md-2 col-form-label" for="title">Comments</label>
                   <div class="col-md-10">
-                    <textarea class="form-control" name="comments"><?php echo $listing_details['comments']; ?></textarea>
+                    <textarea class="form-control" id="comments" name="comments"><?php echo $listing_details['comments']; ?></textarea>
                   </div>
                 </div>
 
@@ -349,11 +349,13 @@
     </div>
   </div>
        
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=<?php echo GOOGLE_API ?>" type="text/javascript"></script>
 
   <script type="text/javascript">
 
-
+$(document).ready(function () {
+    initSummerNote(['#comments']);
+  });
   // User Specific Data
   var highestNumberOfCategories = parseInt('<?php echo get_feature_limit('number_of_categories'); ?>');
   var highestNumberOfPhotos     = parseInt('<?php echo get_feature_limit('number_of_photos'); ?>');
@@ -586,8 +588,10 @@ var markers = [];
   var loc =new google.maps.places.Autocomplete(input_loc);
   google.maps.event.addListener(loc, 'place_changed', function(){
      var place = loc.getPlace();
+
      if(place.formatted_address){
-      codeAddress(place.name+', '+place.formatted_address);
+      //codeAddress(place.name+', '+place.formatted_address);
+      codeAddress(place.geometry.location.lat(),place.geometry.location.lng());
     }else{
       $("#location").val('');
     }
@@ -602,21 +606,22 @@ var markers = [];
   new google.maps.places.Autocomplete(input_city,{types: ['(cities)']});
   
 
-   function codeAddress(address) {
+   function codeAddress(latv, lngv) {
     
       setAllMap(null);
       var lat = $('#latitude').val();
       var lng = $('#longitude').val();
       
-      var add ='';
-      if(address){
-        add ={address:address}
-      }
+    //  var add ={'location': { address }} ;
+      // if(address){
+      //   add ={address:address}
+      // }
       
-      if(!address && lat !='' && lng !=''){
-        add ={'location': {lat: parseFloat(lat), lng: parseFloat(lng)}};
-      }
-      
+      // if(!address && lat !='' && lng !=''){
+      //   add ={'location': {lat: parseFloat(lat), lng: parseFloat(lng)}};
+      // }
+      add ={'location': {lat: parseFloat(latv), lng: parseFloat(lngv)}};
+      console.log(add);
       geocoder.geocode( add, function(results, status)
       {
           if (status == google.maps.GeocoderStatus.OK)

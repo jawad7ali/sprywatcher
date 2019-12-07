@@ -1,3 +1,8 @@
+<style type="text/css">
+    .clear{
+        clear: both;
+    } 
+</style>
 <div class="row ">
     <div class="col-xl-12">
         <div class="card">
@@ -67,15 +72,28 @@
 <div class="row ">
     <div class="col-xl-12">
         <div class="card">
+            <form method="POST" action="<?php echo site_url('admin/bulkaction') ?>">
             <div class="card-body">
-                <h4 class="mb-3 header-title"><?php echo get_phrase('listings'); ?></h4>
+                <h4 class="mb-3 header-title" style="float: left;"><?php echo get_phrase('listings'); ?></h4>
+
+                <div class="mb-3 bulkdrop" style="float: right; width: 25%; display: none;">
+                    <select class="form-control" name="action_type" onchange="this.form.submit();">
+                        <option value="">Bulk Action</option>
+                        <option value="mark_as_active"><?php echo get_phrase('mark_as_active'); ?></option>
+                        <option value="mark_as_pending"><?php echo get_phrase('mark_as_pending'); ?></option>
+                        <option value="delete"><?php echo get_phrase('delete'); ?></option>
+                    </select>
+                    
+                </div>
+                <div class="clear"></div>
                 <table id="listing-datatable" class="table table-striped dt-responsive nowrap" width="100%" data-page-length='25'>
                     <thead>
                         <tr>
+                            <th> </th>
                             <th>#</th>
                             <th><?php echo get_phrase('title'); ?></th>
-                            <th><?php echo get_phrase('categories'); ?></th>
-                            <th><?php echo get_phrase('location'); ?></th>
+                            <th>Image</th>
+                           <!--  <th><?php echo get_phrase('location'); ?></th> -->
                             <th><?php echo get_phrase('status'); ?></th>
                             <th><?php echo get_phrase('option'); ?></th>
                         </tr>
@@ -86,6 +104,7 @@
                         foreach ($listings as $listing):
                         $user_details = $this->user_model->get_all_users($listing['user_id'])->row_array();?>
                         <tr>
+                            <td><input type="checkbox" class="checkbox_check" name="action[]" value="<?php echo $listing['id']; ?>"></td>
                             <td><?php echo ++$counter; ?></td>
                             <td>
                                 <strong><a href="<?php echo site_url('admin/listing_form/edit/'.$listing['id']); ?>"><?php echo strlen($listing['name']) > 20 ? substr($listing['name'],0,20)."..." : $listing['name']; ?></a></strong><br>
@@ -95,21 +114,18 @@
                                     ?>
                                 </small>
                             </td>
-                            <td>
-                                <?php
-                                $categories = json_decode($listing['categories']);
-                                foreach ($categories as $category):
-                                    $category_details = $this->crud_model->get_categories($category)->row_array();?>
-                                    <span class="badge badge-secondary"><?php echo $category_details['name']; ?></span><br>
-                                <?php endforeach; ?>
+                            <td> 
+                            <?php if(json_decode($listing['photos'])[0]){ ?>
+                                <img width="100" src="<?php echo base_url('uploads/listing_images/thumb-'.json_decode($listing['photos'])[0]); ?>" > 
+                            <?php } ?>
                             </td>
-                            <td>
+                           <!--  <td>
                                 <?php
                                 $country_details = $this->crud_model->get_countries($listing['country_id'])->row_array();
                                 $city_details = $this->crud_model->get_cities($listing['city_id'])->row_array();
                                 echo $listing['city_id'];
                                 ?>
-                            </td>
+                            </td> -->
                             <td class="">
                                 <span class="mr-2">
                                 <?php if ($listing['status'] == 'pending'): ?>
@@ -160,11 +176,25 @@
                 </tbody>
             </table>
         </div> <!-- end card body-->
+        </form>
     </div> <!-- end card -->
 </div><!-- end col-->
 </div>
 
 <script type="text/javascript">
+    $(document).ready(function () {
+    var ckbox = $('.checkbox_check');
+    $('input').on('click',function () {
+        if (ckbox.is(':checked')) {
+           $('.bulkdrop').css('display','');
+        } else {
+           $('.bulkdrop').css('display','none');
+             
+        }
+    });
+});
+
+
 function filterTable() {
     $('#preloader_gif').show();
     update_date_range();

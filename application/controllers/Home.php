@@ -120,9 +120,9 @@ class Home extends CI_Controller {
         $this->session->set_userdata('listings_view', $param1);
     }
     public function getlocid(){
-        $name =$this->crud_model->get_listing_by_name(ucfirst($this->input->post('loc')))->row();
+        $name =$this->crud_model->get_listing_by_name(ucfirst(htmlspecialchars($this->input->post('loc'))))->row();
        // echo $this->db->last_query();
-        echo $name->code;
+         echo $name->code;
     }
 
     function listings()
@@ -176,7 +176,7 @@ class Home extends CI_Controller {
                 'image' => json_decode($listing['photos'])[0] ? json_decode($listing['photos'])[0] : '',
                 'link' => get_listing_url($listing['id']),
                 'url' => $listing['website'],
-                'name' => $listing['name'],
+                'name' => htmlspecialchars_decode($listing['name']),
                 'is_spray' => $listing['is_spray'],
                 'handicap' => $listing['handicap'],
                 'category' => $listing['listing_type'],
@@ -186,6 +186,7 @@ class Home extends CI_Controller {
                 'stars3' => $this->frontend_model->get_rating_privacy_rating($listing['id']),
                 'phone' => $listing['phone'],
                 'address' => $listing['address'],
+                'comments' => htmlspecialchars_decode($listing['comments']), 
                 'about' => substr($listing['description'], 0, 15).'\r\n',
                 'tags' => $listing_tags,
             );

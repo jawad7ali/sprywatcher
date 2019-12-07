@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 	public function __construct()
-	{
+	{ 
 		parent::__construct();
 
 		$this->load->database();
@@ -275,7 +275,41 @@ class Admin extends CI_Controller {
 			$this->session->set_flashdata('flash_message', get_phrase('listing_updated'));
 			redirect(site_url('admin/listings'));
 		}
-
+		$page_data['timestamp_start'] = strtotime('-29 days', time());
+		$page_data['timestamp_end']   = strtotime(date("m/d/Y"));
+		$page_data['page_name']  = 'listings';
+		$page_data['page_title'] = get_phrase('listings');
+		//$page_data['listings'] = $this->crud_model->get_listings(0, $page_data['timestamp_start'], $page_data['timestamp_end'])->result_array();
+		$page_data['listings'] = $this->crud_model->get_listings(0, $page_data['timestamp_start'], $page_data['timestamp_end'])->result_array();
+		$this->load->view('backend/index', $page_data);
+	}
+	public function bulkaction() {
+		if ($this->session->userdata('admin_login') != true) {
+			redirect(site_url('login'));
+		}
+		 
+		$param1 =$this->input->post('action_type');
+		$param2 =$this->input->post('action');
+		 
+		if ($param1 == 'delete') {
+			foreach ($param2 as $key => $value) {
+				$this->crud_model->delete_from_table('listing', $value);
+			}
+			$this->session->set_flashdata('flash_message', get_phrase('listing_deleted'));
+			redirect(site_url('admin/listings'));
+		}elseif ($param1 == 'mark_as_active'){
+			foreach ($param2 as $key => $value) {
+				$this->crud_model->update_listings_single_column('status', 'active', $value);
+			}
+			$this->session->set_flashdata('flash_message', get_phrase('listing_updated'));
+			redirect(site_url('admin/listings'));
+		}elseif ($param1 == 'mark_as_pending'){
+			foreach ($param2 as $key => $value) {
+				$this->crud_model->update_listings_single_column('status', 'pending', $value);
+			}
+			$this->session->set_flashdata('flash_message', get_phrase('listing_updated'));
+			redirect(site_url('admin/listings'));
+		}
 		$page_data['timestamp_start'] = strtotime('-29 days', time());
 		$page_data['timestamp_end']   = strtotime(date("m/d/Y"));
 		$page_data['page_name']  = 'listings';

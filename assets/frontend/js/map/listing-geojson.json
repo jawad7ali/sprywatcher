@@ -8,28 +8,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    "73.0384357",
-                    "33.66673"
+                    "100.56881440000006",
+                    "13.7203249"
                 ]
             },
             "properties": {
-                "id": "acc60b8b92d6c53d282f5477ced2b005",
+                "id": "c89c93b266325b4088e9210df60b08e3",
                 "index": 0,
                 "isActive": true,
-                "logo": "6baa01572ec7b8a065f967f91929f25d.jpg",
-                "image": "80fee64dfc871c807f0d76ea1326d996.jpg",
-                "link": "http://localhost/spryfinder/4/general/exceptional-images/1",
-                "url": "ww.c.com",
-                "name": "Exceptional Images.",
+                "logo": "e368600208d0036714d933440868566d.jpg",
+                "image": "",
+                "link": "http://localhost/spryfinder/k-village-sukhumvit-26-alley-khlong-tan-khlong-toei-bangkok-thailand/7",
+                "url": null,
+                "name": "K Village, Sukhumvit 26 Alley, Khlong Tan, Khlong Toei, Bangkok, Thailand",
+                "is_spray": "1",
                 "handicap": "1",
-                "category": "general",
-                "email": "jawad7ali@gmail.com",
-                "stars": "0.0",
-                "stars2": "0.0",
-                "stars3": "0.0",
-                "phone": "03156562323",
-                "address": "",
-                "about": "Exceptional Ima\r\n",
+                "category": null,
+                "email": "",
+                "stars": "4.0",
+                "stars2": "5.0",
+                "stars3": "1.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
                 "tags": [
                     ""
                 ]
@@ -42,28 +44,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    "73.0459357",
-                    "33.6038165"
+                    "100.56936070000006",
+                    "13.7314431"
                 ]
             },
             "properties": {
-                "id": "118d4278377fbc5d38321474e25407e3",
+                "id": "4fca79061e9b01b96fb218c03d32d20c",
                 "index": 1,
                 "isActive": true,
-                "logo": "96f87e5e9f6bd71dd84f8b8e7e11e5a2.jpg",
-                "image": "93b9f7c5d854baa60438a276afa8cc1e.jpg",
-                "link": "http://localhost/spryfinder/4/general/market-research-interviewing/2",
-                "url": "",
-                "name": "Market Research Interviewing",
+                "logo": "5f0923b008a5a1d36ad1b7b81047d78b.jpg",
+                "image": "c9dd69168b2042afc9e1bd6255c7a67c.jpg",
+                "link": "http://localhost/spryfinder/emquartier-sukhumvit-road-khlong-tan-nuea-watthana-bangkok-thailand/8",
+                "url": null,
+                "name": "EmQuartier, Sukhumvit Road, Khlong Tan Nuea, Watthana, Bangkok, Thailand",
+                "is_spray": "0",
                 "handicap": "1",
-                "category": "general",
+                "category": null,
                 "email": "",
-                "stars": "0.0",
-                "stars2": "0.0",
-                "stars3": "0.0",
-                "phone": "",
-                "address": "",
-                "about": "Market Research\r\n",
+                "stars": "5.0",
+                "stars2": "1.0",
+                "stars3": "1.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
                 "tags": [
                     ""
                 ]
@@ -76,27 +80,29 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    "73.0478687",
-                    "33.7076566"
+                    "100.59775179999997",
+                    "13.7336368"
                 ]
             },
             "properties": {
-                "id": "368643249380d4ad6e01c15adba67b16",
+                "id": "3ddaddd67626a41f6605e4708aebf669",
                 "index": 2,
                 "isActive": true,
-                "logo": "thumbnail.png",
-                "image": "2179747a781559ef75f2a2b7eb4f4dac.jpg",
-                "link": "http://localhost/spryfinder/4/metro-cash-and-carry-laila-road-islamabad-pakistan/4",
+                "logo": "1de74624ee2ab8f934f93c3cecc3814f.jpg",
+                "image": "aea1df87741158624a4f9a76f03a39db.jpg",
+                "link": "http://localhost/spryfinder/p-b-tower-khlong-tan-nuea-watthana-bangkok-thailand/11",
                 "url": null,
-                "name": "Metro Cash and carry, Laila Road, Islamabad, Pakistan",
+                "name": "P. B. Tower, Khlong Tan Nuea, Watthana, Bangkok, Thailand",
+                "is_spray": "1",
                 "handicap": "1",
                 "category": null,
-                "email": "jawadali@gmail.com",
-                "stars": "2.0",
-                "stars2": "3.0",
-                "stars3": "4.0",
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
                 "phone": null,
                 "address": null,
+                "comments": "",
                 "about": "\r\n",
                 "tags": [
                     ""
@@ -106,31 +112,393 @@
         {
             "type": "Feature",
             "is_spray": "1",
-            "handicap": "0",
+            "handicap": "1",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    "73.0240644",
-                    "33.6400907"
+                    "98.2810905",
+                    "8.2545731"
                 ]
             },
             "properties": {
-                "id": "2218a59490cb2567be09122597568fe4",
+                "id": "f15457132d6f1f69d0e92b1319ce37ee",
                 "index": 3,
                 "isActive": true,
                 "logo": "thumbnail.png",
-                "image": "05a2c8657c648585dbf2e688d1dd3260.jpg",
-                "link": "http://localhost/spryfinder/4/centaurus-metro-subway-islamabad-pakistan/5",
+                "image": "",
+                "link": "http://localhost/spryfinder/aleenta-phuket-phang-nga-resort-amp-spa-khok-kloi-takua-thung-district-phang-nga-thailand/22",
                 "url": null,
-                "name": "Centaurus Metro Subway, Islamabad, Pakistan",
-                "handicap": "0",
+                "name": "Aleenta Phuket - Phang Nga Resort & Spa, Khok Kloi, Takua Thung District, Phang-nga, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
                 "category": null,
-                "email": "jawadali@gmail.com",
-                "stars": "3.0",
-                "stars2": "4.0",
-                "stars3": "5.0",
+                "email": "",
+                "stars": "5.0",
+                "stars2": "3.0",
+                "stars3": "0.0",
                 "phone": null,
                 "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "100.56987290000006",
+                    "13.7227532"
+                ]
+            },
+            "properties": {
+                "id": "d883d3c58a54883d3f421abac4948978",
+                "index": 4,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/indus-sukhumvit-26-alley-khlong-tan-khlong-toei-bangkok-thailand/23",
+                "url": null,
+                "name": "Indus, Sukhumvit 26 Alley, Khlong Tan, Khlong Toei, Bangkok, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "0",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "100.56868439999994",
+                    "13.8286184"
+                ]
+            },
+            "properties": {
+                "id": "95f75bb6daa829d8ad982a5faa359a13",
+                "index": 5,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/major-cineplex-ratchayothin-phahonyothin-road-lat-yao-chatuchak-bangkok-thailand/24",
+                "url": null,
+                "name": "Major Cineplex Ratchayothin, Phahonyothin Road, Lat Yao, Chatuchak, Bangkok, Thailand",
+                "is_spray": "0",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "99.83378829999992",
+                    "19.9039061"
+                ]
+            },
+            "properties": {
+                "id": "a312a6f8b66126854365eb422da1ffec",
+                "index": 6,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/wiang-inn-hotel-phaholyothin-road-wiang-mueang-chiang-rai-district-chiang-rai-thailand/25",
+                "url": null,
+                "name": "WIANG INN HOTEL, Phaholyothin Road, Wiang, Mueang Chiang Rai District, Chiang Rai, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "72.7228364",
+                    "3.6167954"
+                ]
+            },
+            "properties": {
+                "id": "a84ddbe3a4f0a87dd45b838f018dde33",
+                "index": 7,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/conrad-maldives-rangali-island-maldives/26",
+                "url": null,
+                "name": "Conrad Maldives Rangali Island, Maldives",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "4.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.59800859999996",
+                    "4.3302248"
+                ]
+            },
+            "properties": {
+                "id": "74af919933f1e643cee65afeb10cc9fb",
+                "index": 9,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/four-seasons-resort-maldives-at-kuda-huraa-maldives/28",
+                "url": null,
+                "name": "Four Seasons Resort Maldives at Kuda Huraa, Maldives",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "73.08461510000006",
+                    "5.2063552"
+                ]
+            },
+            "properties": {
+                "id": "806434d576085773df876834a74638fa",
+                "index": 10,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/dusit-thani-maldives-mudhdhoo-island-road-maldives/29",
+                "url": null,
+                "name": "Dusit Thani Maldives, Mudhdhoo Island Road, Maldives",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "100.57142999999996",
+                    "13.7634289"
+                ]
+            },
+            "properties": {
+                "id": "ab71242b3e72622841e8215e35c2e92a",
+                "index": 11,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/mcot-public-company-limited-rama-ix-rd-huai-khwang-bangkok-thailand/30",
+                "url": null,
+                "name": "Mcot Public Company Limited, Rama IX Rd, Huai Khwang, Bangkok, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "3.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "100.57532420000007",
+                    "13.7271469"
+                ]
+            },
+            "properties": {
+                "id": "f8a28b1f1aa30c32a39816f2e3174723",
+                "index": 12,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/pizza-massilia-klang-alley-khlong-tan-nuea-watthana-bangkok-thailand/31",
+                "url": null,
+                "name": "Pizza Massilia, Klang Alley, Khlong Tan Nuea, Watthana, Bangkok, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "98.30646460000003",
+                    "8.1110951"
+                ]
+            },
+            "properties": {
+                "id": "e6bce38ac9f77a7e3320e005250c43cf",
+                "index": 13,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "",
+                "link": "http://localhost/spryfinder/phuket-international-airport-hkt-mai-khao-thalang-district-phuket-thailand/32",
+                "url": null,
+                "name": "Phuket International Airport (HKT), Mai Khao, Thalang District, Phuket, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "4.0",
+                "stars2": "4.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "",
+                "about": "\r\n",
+                "tags": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "is_spray": "1",
+            "handicap": "1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "100.63395009999999",
+                    "13.7274429"
+                ]
+            },
+            "properties": {
+                "id": "101546b2af420ec8faf54eb56cf3c321",
+                "index": 14,
+                "isActive": true,
+                "logo": "thumbnail.png",
+                "image": "d13a916f60ab2a47639a9087a628ab8d.jpg",
+                "link": "http://localhost/spryfinder/30-days-cafe-amp-co-working-space-soi-phatthanakan-44-suan-luang-bangkok-thailand/34",
+                "url": null,
+                "name": "30 Days Cafe & Co-Working Space, Soi Phatthanakan 44, Suan Luang, Bangkok, Thailand",
+                "is_spray": "1",
+                "handicap": "1",
+                "category": null,
+                "email": "",
+                "stars": "5.0",
+                "stars2": "5.0",
+                "stars3": "0.0",
+                "phone": null,
+                "address": null,
+                "comments": "test",
                 "about": "\r\n",
                 "tags": [
                     ""

@@ -387,7 +387,7 @@ function add_listing() {
       // exit();
  
       $imgdata=exif_read_data($source_path, 'IFD0');
-           
+
       switch($imgdata['Orientation']) {
           case 3:
               $rotation_angle='180';
@@ -408,7 +408,7 @@ function add_listing() {
           'create_thumb' => TRUE,
           'rotation_angle' => $rotation_angle,
           'thumb_marker' => '',
-          'width' => 200,
+          'width' => 400,
         //  'height' => 150
       );
 
@@ -419,6 +419,9 @@ function add_listing() {
       }else{
         $this->image_lib->rotate();
       } 
+     // echo $this->image_lib->display_errors();
+    //  print_r($imgdata);
+     
 
       $this->image_lib->clear();
    }
@@ -1175,24 +1178,24 @@ function get_application_details() {
     if (count($response['verify-purchase']) > 0) {
 
       //print_r($response);
-      $item_name 				= $response['verify-purchase']['item_name'];
-      $purchase_time 			= $response['verify-purchase']['created_at'];
-      $customer 				= $response['verify-purchase']['buyer'];
-      $licence_type 			= $response['verify-purchase']['licence'];
-      $support_until			= $response['verify-purchase']['supported_until'];
-      $customer 				= $response['verify-purchase']['buyer'];
+      $item_name        = $response['verify-purchase']['item_name'];
+      $purchase_time      = $response['verify-purchase']['created_at'];
+      $customer         = $response['verify-purchase']['buyer'];
+      $licence_type       = $response['verify-purchase']['licence'];
+      $support_until      = $response['verify-purchase']['supported_until'];
+      $customer         = $response['verify-purchase']['buyer'];
 
-      $purchase_date			= date("d M, Y", strtotime($purchase_time));
+      $purchase_date      = date("d M, Y", strtotime($purchase_time));
 
-      $todays_timestamp 		= strtotime(date("d M, Y"));
+      $todays_timestamp     = strtotime(date("d M, Y"));
       $support_expiry_timestamp = strtotime($support_until);
 
-      $support_expiry_date	= date("d M, Y", $support_expiry_timestamp);
+      $support_expiry_date  = date("d M, Y", $support_expiry_timestamp);
 
       if ($todays_timestamp > $support_expiry_timestamp)
-      $support_status		= get_phrase('expired');
+      $support_status   = get_phrase('expired');
       else
-      $support_status		= get_phrase('valid');
+      $support_status   = get_phrase('valid');
 
       $returnable_array = array(
         'purchase_code_status' => $support_status,
@@ -1245,5 +1248,5 @@ function get_application_details() {
         } else {
             return false;
         }
-  	}
+    }
 }

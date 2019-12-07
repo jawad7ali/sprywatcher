@@ -1,4 +1,16 @@
+<style type="text/css">
+.leaflet-popup-content-wrapper {
+    width: 300px !important;
+}
+.map-layout1 {
+    height: 406px;
+}
 
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.68.0/dist/L.Control.Locate.min.css" />
+ 
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.68.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
 <section class="hero_single " > 
  
 		<div id="categorySideMap" class="map-full map-layout1"></div>
@@ -72,13 +84,16 @@
  </div> -->
 <!-- /bg_color_1 -->
 
-<div class="container-fluid margin_80_55"><!-- 
+<div class="container-fluid margin_80_55">
 	<div class="main_title_2">
-		<span><em></em></span>
-		<h2><?php echo get_phrase('popular_listings'); ?></h2>
+		<!-- <span><em></em></span> -->
+		<h1>SprayWatcher</h1>
+		<h2>Your guide to a cleaner backside</h2>
+		<br>
+		<p>Spraywatcher is a simple tool for all of those who prefer restrooms with a bidet (handheld). Check Spraywatcher when booking a hotel to see if their restrooms are equipped, or find a place near you in a time of emergency!</p>
 	</div>
 
-	<div id="reccomended" class="owl-carousel owl-theme">
+	<!-- <div id="reccomended" class="owl-carousel owl-theme">
 		<?php // $listing_number = 0; ?>
 		<?php $listings = $this->frontend_model->get_top_ten_listings();
 
@@ -137,14 +152,8 @@
 <?php include 'assets/frontend/js/map/map-category.php'; ?>
 
 <!-- /container -->
-<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0" type="text/javascript"></script> -->
-<script> 
-	
-
- 
+ <script> 
+ 	var base_url = '<?php echo base_url();?>';
 	var jsonfileurl ='<?php echo base_url('assets/frontend/js/map/listing-geojson.json'); ?>';
-
 	createListingsMap({mapId: 'categorySideMap', jsonFile: jsonfileurl});
-
-	 
 </script>

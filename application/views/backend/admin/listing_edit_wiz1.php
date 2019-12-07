@@ -1,6 +1,4 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/starability/2.4.2/starability-minified/starability-all.min.css">
- 
- 
 
 <?php
 $listing_details = $this->crud_model->get_listings($listing_id)->row_array();
@@ -342,7 +340,7 @@ $listing_categories = json_decode($listing_details['categories'], false);
                   <div class="form-group row mb-3">
                   <label class="col-md-2 col-form-label" for="title">Comments</label>
                   <div class="col-md-10">
-                    <textarea class="form-control" name="comments"><?php echo $listing_details['comments']; ?></textarea>
+                    <textarea class="form-control" id="comments" name="comments"><?php echo $listing_details['comments']; ?></textarea>
                   </div>
                 </div>
 
@@ -393,7 +391,10 @@ $listing_categories = json_decode($listing_details['categories'], false);
 
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDjBoZARSKqNg_fQfLEwdSq3Tu_5QdKlH0" type="text/javascript"></script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
+  $(document).ready(function () {
+    initSummerNote(['#comments']);
+  });
 
   // User Specific Data
   var highestNumberOfCategories = parseInt('<?php echo get_feature_limit('number_of_categories'); ?>');

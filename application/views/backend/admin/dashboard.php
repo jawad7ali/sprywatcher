@@ -30,7 +30,7 @@ $expiration_in_this_month = $this->db->get('package_purchased_history')->result_
         </div> <!-- end card -->
     </div><!-- end col-->
 </div>
-<div class="row">
+<!-- <div class="row">
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
@@ -40,12 +40,12 @@ $expiration_in_this_month = $this->db->get('package_purchased_history')->result_
                 <div class="mt-3 chartjs-chart" style="height: 320px;">
                     <canvas id="task-area-chart"></canvas>
                 </div>
-            </div> <!-- end card body-->
-        </div> <!-- end card -->
-    </div><!-- end col-->
-</div>
+            </div>  
+        </div>  
+    </div> 
+</div> -->
 <div class="row">
-    <div class="col-xl-4">
+    <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title mb-4"><?php echo get_phrase('listing_overview'); ?></h4>
@@ -71,7 +71,7 @@ $expiration_in_this_month = $this->db->get('package_purchased_history')->result_
             </div>
         </div>
     </div>
-    <div class="col-xl-8">
+  <!--   <div class="col-xl-8">
         <div class="card">
             <div class="card-body">
                 <h4 class="header-title mb-3"><?php echo get_phrase('package_expiration').' : '.date('F'); ?></h4>
@@ -112,5 +112,5 @@ $expiration_in_this_month = $this->db->get('package_purchased_history')->result_
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
